@@ -8,9 +8,9 @@ export default class Nabvar extends Component {
     return (
       <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
         <Link to="/">
-          <a className="navbar-brand" href="/">
-            <i class="fas fa-dog fa-lg mr-1" /> DOG FASHION SHOP
-          </a>
+          <span className="navbar-brand" href="/">
+            <i className="fas fa-dog fa-lg mr-1" /> DOG FASHION SHOP
+          </span>
         </Link>
 
         <ul className="navbar-nav align-items-center">
