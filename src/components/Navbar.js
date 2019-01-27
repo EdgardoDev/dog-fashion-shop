@@ -1,29 +1,45 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import { ButtonContainer } from './Button';
 
 export default class Nabvar extends Component {
   render() {
-    return <nav className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
+    return (
+      <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
         <Link to="/">
-        <a className="navbar-brand" href="/">
+          <a className="navbar-brand" href="/">
             <i class="fas fa-dog fa-lg mr-1" /> DOG FASHION SHOP
           </a>
         </Link>
 
         <ul className="navbar-nav align-items-center">
           <li className="nav-item ml-5">
-          <Link to="/" className="nav-link">
-            PRODUCTS
-          </Link>
+            <Link to="/" className="nav-link">
+              PRODUCTS
+            </Link>
           </li>
         </ul>
 
         <Link to="/cart" className="ml-auto">
-          <button>
-            <i className="fas fa-cart-plus mr-1" />
+          <ButtonContainer>
+            <span className="mr-2">
+              <i className="fas fa-cart-plus" />
+            </span>
             MY CART
-          </button>
+          </ButtonContainer>
         </Link>
-      </nav>;
+      </NavWrapper>
+    );
   }
 }
+
+const NavWrapper = styled.nav`
+  background: var(--mainBlue);
+  .nav-link {
+    color: var(--mainWhite)!important;
+    font-size: 1.3rem;
+    
+  }
+`
+
