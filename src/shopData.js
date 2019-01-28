@@ -100,11 +100,11 @@ export const storeProducts = [
 export const detailProduct = {
   id: 1,
   title: "Google Pixel - Black",
-  img: "img/product-1.png",
+  img: "img/item1.jpg",
   price: 10,
-  company: "google",
+  company: "DOG FASHION SHOP",
   info:
-    "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    "This beautiful green Sweater has a truly classic look with a wide-ribbed turtle neck and trim. Made from warm and easy to wash 100% acrylic. Wash with cold water in gentle cycle and turn sweater inside out. Line dry.",
   inCart: false,
   count: 0,
   total: 0
