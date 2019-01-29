@@ -11,7 +11,7 @@ export default class Details extends Component {
           const {id, company, img, info, price, title, inCart} = value.detailProduct;
           return <div className="container py-2">
               <div className="row">
-                <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
+                <div className="col-10 mx-auto text-center text-slanted text-blue my-4">
                   <h3 className="textTitle">{title}</h3>
                 </div>
               </div>
@@ -38,17 +38,17 @@ export default class Details extends Component {
                   <p className="text-muted">{info}</p>
                   <div>
                     <Link to="/">
-                      <ButtonContainer>
+                      <ButtonContainer className="mb-2">
                         <i className="fas fa-arrow-alt-circle-left" /> BACK TO PRODUCTS
                       </ButtonContainer>
                     </Link>
-                    <ButtonContainer
+                  <ButtonContainer className="mb-2"
                     disabled={inCart ? true:false} onClick={() => {
                       value.addItemToCart(id);
                       value.openModal(id);
                     }}
                     >
-                    <i class="fas fa-check-square"></i> {inCart ? "IN YOUR CART" : "ADD TO CART"}
+                    <i className="fas fa-check-square"></i> {inCart ? "IN YOUR CART" : "ADD TO CART"}
                     </ButtonContainer>
                   </div>
                 </div>

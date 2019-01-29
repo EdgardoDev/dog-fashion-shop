@@ -26,7 +26,7 @@ export default class Product extends Component {
                 }}>
                 {inCart ? (
                   <p className="mb-0 btnCartText" disabled>
-                    <i class="fas fa-check-square"></i></p>
+                    <i className="fas fa-check-square"></i></p>
                 ) : (
                     <i className="fas fa-cart-plus" />
                   )}

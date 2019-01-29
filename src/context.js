@@ -9,13 +9,13 @@ class ProductProvider extends Component {
     products: [],
     detailProduct: detailProduct,
     cart: [],
-    modalOpened: true,
+    modalOpened: false,
     modalItem: detailProduct,
   };
 
   componentDidMount() {
     this.setProducts();
-  }
+  };
 
   setProducts = () => {
     let tempProducts = [];
@@ -39,7 +39,7 @@ class ProductProvider extends Component {
     const product = this.getItem(id);
     this.setState(() => {
       return {detailProduct:product}
-    })
+    });
   };
 
   addItemToCart = (id) => {
@@ -52,21 +52,21 @@ class ProductProvider extends Component {
     product.total = price;
     this.setState(() => {
       return {products:tempProducts, cart:[...this.state.cart, product]}
-    })
+    });
   };
 
   openModal = id => {
     const product = this.getItem(id);
     this.setState(() => {
-      return {modalItem:product, modalOpened:true}
+      return {modalItem: product, modalOpened:true}
     });
-  }
+  };
 
   closeModal = () => {
     this.setState(() => {
       return {modalOpened:false}
-    })
-  }
+    });
+  };
 
   render() {
     return (

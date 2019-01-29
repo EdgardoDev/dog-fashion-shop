@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const ButtonContainer = styled.button`
-  margin-right: 5px;
+  margin-right: 10px;
   background: transparent;
   border: 0.1rem solid var(--lightBlue);
   padding: 0.4rem;
