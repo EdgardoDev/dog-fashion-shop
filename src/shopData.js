@@ -30,67 +30,67 @@ export const storeProducts = [
     price: 28,
     company: "DOG FASHION SHOP",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "Nice hooded yellow raincoat with soft cotton lining accented with black polka dots. Velcro strips around each sleeve prevent rain splashing into the sleeves. Attached D-ring for lead attachment and Velcro closure.",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 4,
-    title: "HTC 10 - White",
+    title: "Yellow Sweater",
     img: "img/item4.jpg",
     price: 18,
     company: "DOG FASHION SHOP",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "This adorable yellow Sweater has a truly classic look with a wide-ribbed turtle neck and trim. Made from warm and easy to wash 100% acrylic. Wash with cold water in gentle cycle and turn sweater inside out. Line dry.",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 5,
-    title: "HTC Desire 626s",
+    title: "Purple Sweater",
     img: "img/item5.jpg",
     price: 24,
-    company: "htc",
+    company: "DOG FASHION SHOP",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "The purple Sweater has a truly classic look with a wide-ribbed turtle neck and trim. Made from warm and easy to wash 100% acrylic. Wash with cold water in gentle cycle and turn sweater inside out. Line dry.",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 6,
-    title: "Vintage Iphone",
+    title: "Brown Sweater",
     img: "img/item6.jpg",
-    price: 17,
-    company: "apple",
+    price: 28,
+    company: "DOG FASHION SHOP",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "This Dog Sweater is hand knit using 100% natural Wool (chemical free) from happy free range sheep. All sweaters are handmade & may vary slightly in color & style. Made following the Fair Trade guidelines.",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 7,
-    title: "Iphone 7",
+    title: "Red Coat",
     img: "img/item7.jpg",
     price: 30,
-    company: "apple",
+    company: "DOG FASHION SHOP",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "Feel the elegance in this stylish Red Coat! Made of exceptional quality fiber from German Meister, Steiff. This light yet durable coat features harmless natural fiber, linen lining, and certified Steiff label inside.",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 8,
-    title: "Smashed Iphone",
+    title: "Reversible Vest",
     img: "img/item8.jpg",
-    price: 2,
-    company: "apple",
+    price: 35,
+    company: "DOG FASHION SHOP",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "This classic reversible vest is perfect for those cold outdoor days. Each vest has a solid back on one side and gingham print on the other side. Features a water repellent shell, keyhole for leash attachment, high collar to keep necks warm, elastic waist, and 2 wide velcro for an adjustable fit.",
     inCart: false,
     count: 0,
     total: 0
@@ -99,7 +99,7 @@ export const storeProducts = [
 
 export const detailProduct = {
   id: 1,
-  title: "Google Pixel - Black",
+  title: "Skater Dress",
   img: "img/item1.jpg",
   price: 10,
   company: "DOG FASHION SHOP",

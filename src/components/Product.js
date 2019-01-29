@@ -11,27 +11,28 @@ export default class Product extends Component {
     return (
       <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
         <div className="card">
-          <div className="img-container p-5" onClick={() => console.log('Clicked')}>
-
-            <Link to="/details">
-              <img src={img} alt="Product Detail" className="card-img-top"/>
-            </Link>
-
-            <button 
-              className="buttonCart" 
-              disabled={inCart ? true : false } 
-              onClick={() => {
-                console.log('Added to the cart!'); 
-              }}>
-            
-              {inCart ? (
-                <p className="mb-0" disabled>
-                IN CART</p>
-              ):(
-                <i className="fas fa-cart-plus" />
-              )}
-            </button>
-          </div>
+          <ProductConsumer>
+            {(value) => (
+            <div className="img-container p-5" onClick={() => value.processDetails(id)}>
+              <Link to="/details">
+                <img src={img} alt="Product Detail" className="card-img-top" />
+              </Link>
+              <button
+                className="buttonCart"
+                disabled={inCart ? true : false}
+                onClick={() => {
+                  value.addItemToCart(id);
+                }}>
+                {inCart ? (
+                  <p className="mb-0" disabled>
+                    IN CART</p>
+                ) : (
+                    <i className="fas fa-cart-plus" />
+                  )}
+              </button>
+            </div>
+            )} 
+          </ProductConsumer>     
           <div className="card-footer d-flex justify-content-between">
             <p className="align-self-center mb-0">
                 {title}
@@ -43,7 +44,7 @@ export default class Product extends Component {
           </div>
         </div>
       </ProductWrapper>
-    )
+    );
   }
 }
 
@@ -73,7 +74,7 @@ const ProductWrapper = styled.div`
   &:hover {
     .card {
       border: 0.04rem solid rgba(0, 0, 0, 0.2);
-      box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.2);
+      box-shadow: 2px 2px 5px 2px rgba(179, 157, 219, 0.2);
     }
 
     .card-footer {

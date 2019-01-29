@@ -1,14 +1,15 @@
 :root {
-  --mainBlue: #2a2a72;
-  --lightBlue: #009ffd;
+  --mainBlue: #4527a0;
+  --lightBlue: #5e35b1;
   --mainWhite: #f3f3f3;
   --mainDark: #232528;
-  --mainYellow: #ffa400;
+  --mainBackground: #ede7f6;
+  --cartBtn: #ede7f6;
 }
 
 body {
   font-family: 'Roboto', sans-serif !important;
-  background: var(--mainWhite) !important;
+  background: var(--mainBackground) !important;
   color: var(--mainDark) !important;
 }
 
@@ -23,4 +24,9 @@ body {
 
 .textBright {
   color: var(--lightBlue);
+}
+
+.imgDetail {
+  border: 5px solid var(--lightBlue);
+  padding: 10px;
 }

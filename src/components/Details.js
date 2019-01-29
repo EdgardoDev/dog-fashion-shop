@@ -12,12 +12,12 @@ export default class Details extends Component {
           return <div className="container py-2">
               <div className="row">
                 <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
-                  <h2>{title}</h2>
+                  <h3 className="textTitle">{title}</h3>
                 </div>
               </div>
               <div className="row">
                 <div className="col-10 mx-auto col-md-6 my-3">
-                  <img src={img} className="img-fluid" alt="product" />
+                  <img src={img} className="img-fluid imgDetail" alt="product" />
                 </div>
                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
                   <h3>item : {title}</h3>
