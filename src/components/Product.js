@@ -22,10 +22,11 @@ export default class Product extends Component {
                 disabled={inCart ? true : false}
                 onClick={() => {
                   value.addItemToCart(id);
+                  value.openModal(id);
                 }}>
                 {inCart ? (
-                  <p className="mb-0" disabled>
-                    IN CART</p>
+                  <p className="mb-0 btnCartText" disabled>
+                    <i class="fas fa-check-square"></i></p>
                 ) : (
                     <i className="fas fa-cart-plus" />
                   )}
@@ -103,7 +104,7 @@ const ProductWrapper = styled.div`
     background: var(--lightBlue);
     border: none;
     color: var(--mainWhite);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     transform: translate(100%, 100%);
     transition: all 0.3s linear;
   }
@@ -113,7 +114,7 @@ const ProductWrapper = styled.div`
   }
 
   .buttonCart:hover {
-    color: var(--mainBlue); 
+    color: var(--lightPurple); 
     cursor: pointer;
   }
 `;

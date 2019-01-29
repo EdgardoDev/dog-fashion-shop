@@ -1,10 +1,11 @@
 :root {
-  --mainBlue: #4527a0;
+  --mainBlue: #311b92;
   --lightBlue: #5e35b1;
   --mainWhite: #f3f3f3;
   --mainDark: #232528;
   --mainBackground: #ede7f6;
   --cartBtn: #ede7f6;
+  --lightPurple: #b39ddb;
 }
 
 body {

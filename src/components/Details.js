@@ -35,7 +35,7 @@ export default class Details extends Component {
                   <p className="mt-3 mb-0 text-capitalize font-weight-bold">
                     product information:
                   </p>
-                  <p className="text-muted lead">{info}</p>
+                  <p className="text-muted">{info}</p>
                   <div>
                     <Link to="/">
                       <ButtonContainer>
@@ -45,9 +45,10 @@ export default class Details extends Component {
                     <ButtonContainer
                     disabled={inCart ? true:false} onClick={() => {
                       value.addItemToCart(id);
+                      value.openModal(id);
                     }}
                     >
-                      <i className="fas fa-cart-plus"></i> {inCart ? "inCart" : "ADD TO CART"}
+                    <i class="fas fa-check-square"></i> {inCart ? "IN YOUR CART" : "ADD TO CART"}
                     </ButtonContainer>
                   </div>
                 </div>
