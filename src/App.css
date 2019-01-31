@@ -31,3 +31,23 @@ body {
   border: 5px solid var(--lightBlue);
   padding: 10px;
 }
+
+.btnPurple {
+  background: transparent;
+  font-size: 0.8rem !important;
+  color: var(--lightBlue);
+  border-radius: 0 !important;
+  border: 0.1rem solid var(--lightBlue) !important;
+}
+
+.btnPurple:hover {
+  background: var(--lightBlue) !important;
+  color: var(--mainWhite) !important;
+}
+
+.cartIcon {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainBlue);
+}
+
