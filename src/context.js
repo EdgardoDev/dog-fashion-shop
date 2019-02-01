@@ -11,9 +11,9 @@ class ProductProvider extends Component {
     cart: storeProducts,
     modalOpened: false,
     modalItem: detailProduct,
-    cartSubtotal: 0,
-    cartTax: 0,
-    cartTotal: 0
+    cartSubtotal: 10,
+    cartTax: 20,
+    cartTotal: 30
   };
 
   componentDidMount() {

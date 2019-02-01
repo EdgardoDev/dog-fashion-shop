@@ -51,3 +51,7 @@ body {
   color: var(--mainBlue);
 }
 
+.card {
+  border-radius: 0 !important;
+}
+
