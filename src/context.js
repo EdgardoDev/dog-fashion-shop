@@ -100,7 +100,26 @@ class ProductProvider extends Component {
 
   // Here we decrement items from the cart.
   cartDecrement = (id) => {
+    let tempCart = [...this.state.cart];
+    const theItem = tempCart.find(item => item.id === id)
+    const index = tempCart.indexOf(theItem);
+    const product = tempCart[index];
 
+    product.count = product.count -1;
+    if(product.count === 0) {
+      this.removeItem(id)
+    }
+    else {
+      product.total = product.count * product.price;
+      this.setState(
+        () => {
+          return { cart: [...tempCart] };
+        },
+        () => {
+          this.addTotal();
+        }
+      );
+    }
   };
 
   // Next function is to remove items from the cart.
