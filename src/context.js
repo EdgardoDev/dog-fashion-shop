@@ -45,6 +45,7 @@ class ProductProvider extends Component {
     });
   };
 
+  // Function that will add new items to the cart.
   addItemToCart = (id) => {
     let tempProducts = [...this.state.products];
     const index = tempProducts.indexOf(this.getItem(id));
@@ -63,6 +64,7 @@ class ProductProvider extends Component {
     );
   };
 
+  // Small functionality to open the modal window.
   openModal = id => {
     const product = this.getItem(id);
     this.setState(() => {
@@ -70,20 +72,38 @@ class ProductProvider extends Component {
     });
   };
 
+  // Here we close the modal window.
   closeModal = () => {
     this.setState(() => {
       return {modalOpened:false}
     });
   };
 
+  // Here we increment items in the cart.
   cartIncrement = (id) => {
+    let tempCart = [...this.state.cart];
+    const theItem = tempCart.find(item => item.id === id)
+    const index = tempCart.indexOf(theItem);
+    const product = tempCart[index];
+    product.count = product.count + 1;
+    product.total = product.count * product.price;
 
-  }
+    this.setState(
+      () => {
+        return{cart:[...tempCart]};
+      }, 
+      () => {
+        this.addTotal();
+      }
+    );
+  };
 
+  // Here we decrement items from the cart.
   cartDecrement = (id) => {
 
-  }
+  };
 
+  // Next function is to remove items from the cart.
   removeItem = (id) => {
     let tempProduct = [...this.state.products];
     let tempCart = [...this.state.cart];
@@ -105,6 +125,7 @@ class ProductProvider extends Component {
     });
   };
 
+  // Here we clear the cart and leave the counter back to cero again.
   clearCart = () => {
     this.setState(() => {
       return {cart :[]};
@@ -114,6 +135,7 @@ class ProductProvider extends Component {
     });
   };
 
+  // Here we calculate the totals (subtotal and tax).
   addTotal = () => {
     let subTotal = 0;
     this.state.cart.map(item =>(subTotal += item.total));
@@ -126,8 +148,8 @@ class ProductProvider extends Component {
         cartTax:tax,
         cartTotal:total
       }
-    })
-  }
+    });
+  };
 
   render() {
     return (
@@ -147,7 +169,7 @@ class ProductProvider extends Component {
       </ProductContext.Provider>
     )
   }
-}
+};
 
 const ProductConsumer = ProductContext.Consumer;
 
